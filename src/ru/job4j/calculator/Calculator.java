@@ -1,21 +1,18 @@
 package ru.job4j.calculator;
 
-public class ArgMethod {
+    public class Calculator {
 
-    public static void hello(String name) {
-        System.out.println("Hello, " + name);
+        public static void main(String[] args) {
+
+            int one = 1;
+            int two = 2;
+            int four = 4;
+            int five = 5;
+            int six = 6;
+            int onePlusTwo = one + two;
+            int sixDivTwo = six / two;
+            int fiveMinusTwo = five - two;
+            int fourTimeTwo = four * two;
+        }
+
     }
-
-    public static void main(String[] args) {
-        String name = "Petr Arsentev";
-        int age = 33;
-
-        ArgMethod.hello(name);
-
-        ArgMethod.hello(name);
-
-        ArgMethod.hello(name);
-
-        ArgMethod.hello(name);
-    }
-}
