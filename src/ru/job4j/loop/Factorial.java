@@ -6,12 +6,12 @@ public class Factorial {
         for (int index = 1; index <= n; index++) {
             result = result * index;
         }
-        System.out.println(result);
         return result;
     }
 
     public static void main(String[] args) {
         System.out.println(calc(0));
+        System.out.println(calc(1));
         System.out.println(calc(2));
         System.out.println(calc(3));
         System.out.println(calc(4));
