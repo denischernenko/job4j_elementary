@@ -18,7 +18,7 @@ public class CheckPrimeNumber {
 
     public static void main(String[] args) {
         CheckPrimeNumber.check(17);
-        System.out.println(CheckPrimeNumber.check(17));
+        System.out.println(CheckPrimeNumber.check(15));
 
     }
 }
