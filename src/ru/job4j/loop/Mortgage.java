@@ -5,9 +5,15 @@ public class Mortgage {
         int year = 0;
         int loanDue = amount + ((amount) * (percent / 100));
         int balance = salary - loanDue;
-        if (salary - (amount + ((amount) * (percent / 100))) < 0) {
+        while (balance < 0) {
+            System.out.println("Долг не погашен.");
             year = year + 1;
-            salary = salary +
+            return year;
+            balance = (amount - balance) + ;
+
+        }
+        if (salary - (amount + ((amount) * (percent / 100))) < 0) {
+
             return year;
         }
         if (balance > 0) {
