@@ -4,10 +4,10 @@ public class Factorial {
     public static int calc(int n) {
         int result = 1;
         for (int index = 1; index <= n; index++) {
-            result = result * n;
+            result = result * index;
         }
-        return result;
         System.out.println(result);
+        return result;
     }
 
     public static void main(String[] args) {

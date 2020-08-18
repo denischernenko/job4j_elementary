@@ -8,13 +8,13 @@ class AlertDivisionByZero {
     }
 
     public static void possibleDiv(int number) {
-        if (number >= 0) {
+        if (number > 0) {
             System.out.println("OK, that is possible to perform.");
         }
         if (number == 0) {
             System.out.println("No, we cannot divide by zero.");
         }
-        if (number <= 0) {
+        if (number < 0) {
             System.out.println("This is negative number.");
         }
     }
