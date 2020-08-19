@@ -13,6 +13,12 @@ public class FitnessTest {
     }
 
     @Test
+    public void whenIvanGreatNik() {
+        int month = Fitness.calc(90, 90);
+        assertThat(month, is(0));
+    }
+
+    @Test
     public void whenIvanLessByOneNik() {
         int month = Fitness.calc(90, 95);
         assertThat(month, is(2));
