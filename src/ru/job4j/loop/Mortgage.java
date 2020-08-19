@@ -9,8 +9,6 @@ public class Mortgage {
             System.out.println("Долг не погашен.");
             year = year + 1;
             return year;
-            balance = (amount - balance) + ;
-
         }
         if (salary - (amount + ((amount) * (percent / 100))) < 0) {
 
