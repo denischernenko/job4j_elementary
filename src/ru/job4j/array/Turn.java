@@ -12,7 +12,7 @@ public class Turn {
     }
 
     public static void main(String[] args) {
-        int[] reverse = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] reverse = new int[] {1, 100, 3, 4, 5, 6, 7, 8, 300, 10};
         int[] rsl = Turn.back(reverse);
         for (int index = 0; index < rsl.length; index++) {
             System.out.println(rsl[index]);
