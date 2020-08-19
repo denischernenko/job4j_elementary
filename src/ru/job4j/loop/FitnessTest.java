@@ -13,7 +13,7 @@ public class FitnessTest {
     }
 
     @Test
-    public void whenIvanGreatNik() {
+    public void whenIvanSameAsNik() {
         int month = Fitness.calc(90, 90);
         assertThat(month, is(0));
     }
