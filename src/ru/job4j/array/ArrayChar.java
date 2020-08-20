@@ -4,17 +4,18 @@ public class ArrayChar {
 
     public static boolean startsWith(char[] word, char[] pref) {
         boolean result = true;
-        for (int index = 0; index < 4; index++) {
-            if (word[index] == pref[index]) {
-                result = true;
-            } else result = false;
+        for (int index = 0; index < pref.length; index++) {
+            if (word[index] != pref[index]) {
+                result = false;
+                break;
+            } else result = true;
         }
         return result;
     }
 
     public static void main(String[] args) {
-        char[] word = new char[] {'T', 'a', 'l', 'k', 'o'};
-        char[] pref = new char[] {'R', 'a', 'l', 'k'};
+        char[] word = new char[] {'R', 'a', 'l', 'g', 'o'};
+        char[] pref = new char[] {'R', 'a', 'l', 'g'};
         System.out.println(ArrayChar.startsWith(word, pref));
     }
 }
