@@ -13,7 +13,7 @@ public class Min {
     }
 
     public static void main(String[] args) {
-        int[] array = new int[] {44, 3, 9, 2, 11, 44, 1, 33};
+        int[] array = new int[] {44, 3, 9, 2, 11, 44, 0, 33};
         System.out.println(Min.findMin(array));
     }
 }
