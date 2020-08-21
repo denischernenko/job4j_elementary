@@ -20,6 +20,6 @@ public class MatrixCheck {
                 {'X', 'X', 'X'},
                 {'w', 'e', 't'}
         };
-        System.out.println(MatrixCheck.monoHorizontal(board, 0));
+        System.out.println(MatrixCheck.monoHorizontal(board, 2));
     }
 }
