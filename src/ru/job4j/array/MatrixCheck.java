@@ -9,17 +9,29 @@ public class MatrixCheck {
                 result = false;
                 break;
             }
-            return result;
         }
     return result;
     }
 
+    public static boolean monoVertical(char[][] board, int column) {
+        boolean result = true;
+        for (int row = 0; row < board.length; row++) {
+            if (board[row][column] != 'X') {
+                result = false;
+                break;
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         char[][] board = {
-                {'v', 'i', 't'},
+                {'X', 'i', 't'},
                 {'X', 'X', 'X'},
-                {'w', 'e', 't'}
+                {'X', 'e', 't'}
         };
-        System.out.println(MatrixCheck.monoHorizontal(board, 2));
+        System.out.println("Только ли элементы Х в данной строке: " + MatrixCheck.monoHorizontal(board, 0));
+        System.out.println("Только ли элементы Х в данном столбце: " + MatrixCheck.monoVertical(board, 0));
+
     }
 }
